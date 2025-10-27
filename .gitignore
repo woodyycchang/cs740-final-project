@@ -1,0 +1,16 @@
+# data & artifacts
+data/
+figs/
+*.csv
+*.log
+
+# node puppeteer cache
+node_modules/
+.pnpm-store/
+package-lock.json
+
+# puppeteer user data (warm caches)
+.warm-*
+
+# OS miscellany
+.DS_Store
