@@ -1,0 +1,10 @@
+example.com
+wikipedia.org
+amazon.com
+netflix.com
+nytimes.com
+cloudflare.com
+google.com
+stackoverflow.com
+cnn.com
+github.com
