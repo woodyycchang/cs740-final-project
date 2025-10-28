@@ -1,10 +1,10 @@
 example.com
 wikipedia.org
-amazon.com
-netflix.com
-nytimes.com
 cloudflare.com
-google.com
-stackoverflow.com
-cnn.com
+apple.com
+nytimes.com
 github.com
+cnn.com
+medium.com
+reddit.com
+stackoverflow.com
