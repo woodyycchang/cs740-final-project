@@ -14,3 +14,6 @@ package-lock.json
 
 # OS miscellany
 .DS_Store
+
+!data/raw/*.csv
+!data/clean/*.csv
