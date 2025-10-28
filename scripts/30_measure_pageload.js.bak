@@ -17,7 +17,6 @@ function pickChromePath(){
   const site = process.argv[2] || 'example.com';
   const mode = process.argv[3] || 'public_udp';
   const out  = process.argv[4] || 'data/raw/web_smoke.csv';
-if (!fs.existsSync(out)) fs.appendFileSync(out, "ts,mode,site,ttfb_ms,dom_ms,load_ms,status\n");
   const tmp  = process.argv[5] || fs.mkdtempSync('/tmp/pageload-');
   const url  = site.startsWith('http') ? site : `https://${site}`;
 
