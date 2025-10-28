@@ -17,3 +17,8 @@ package-lock.json
 
 !data/raw/*.csv
 !data/clean/*.csv
+
+# --- allow data CSV artifacts ---
+!data/
+!data/**/
+!data/**/*.csv
