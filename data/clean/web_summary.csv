@@ -1,0 +1,5 @@
+mode,ttfb_median_ms,dom_median_ms,load_median_ms,samples
+public_udp,360.0,874.0,1278.0,10
+isp_udp,469.0,824.0,1224.0,10
+dot,510.0,730.0,1093.0,10
+doh,331.0,723.0,1070.0,10

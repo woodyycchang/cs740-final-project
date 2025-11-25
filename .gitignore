@@ -22,3 +22,4 @@ package-lock.json
 !data/
 !data/**/
 !data/**/*.csv
+node_modules/

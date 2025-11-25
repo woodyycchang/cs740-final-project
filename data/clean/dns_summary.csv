@@ -1,0 +1,5 @@
+mode,cold_median_ms,warm_median_ms,cold_mean_ms,cold_std_ms,samples_cold,samples_warm,improvement_%
+public_udp,40.0,0.0,46.8,17.2,100,100,100.0
+isp_udp,31.0,N/A,32.2,3.8,100,0,N/A
+dot,36.0,39.0,46.7,41.7,100,100,-8.3
+doh,43.0,N/A,66.2,72.0,10,0,N/A
