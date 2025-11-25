@@ -1,25 +1,23 @@
-# data & artifacts
-data/
-figs/
-*.csv
-*.log
-
-# node puppeteer cache
+# Node
 node_modules/
 .pnpm-store/
 package-lock.json
 
-# puppeteer user data (warm caches)
+# Puppeteer warm caches
 .warm-*
 
-# OS miscellany
+# OS
 .DS_Store
 
-!data/raw/*.csv
-!data/clean/*.csv
+# Logs
+*.log
 
-# --- allow data CSV artifacts ---
+# Temp files
+*.tmp
+*.bak
+
+# Allow data and figs
 !data/
-!data/**/
-!data/**/*.csv
-node_modules/
+!data/**
+!figs/
+!figs/**
