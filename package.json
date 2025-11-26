@@ -1,5 +1,23 @@
 {
   "dependencies": {
-    "puppeteer": "^24.26.1"
-  }
+    "puppeteer": "^24.31.0"
+  },
+  "name": "cs740-final-project",
+  "description": "This project measures DNS resolution time and full page load time across resolver profiles:\r - **public_udp**: Public resolvers over UDP (8.8.8.8, 1.1.1.1)\r - **isp_udp**: ISP resolver over UDP\r - **dot**: DNS-over-TLS (via Stubby)\r - **doh**: DNS-over-HTTPS (via cloudflared)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodyycchang/cs740-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woodyycchang/cs740-final-project/issues"
+  },
+  "homepage": "https://github.com/woodyycchang/cs740-final-project#readme"
 }

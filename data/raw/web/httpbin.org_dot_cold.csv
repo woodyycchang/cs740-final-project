@@ -1,0 +1,2 @@
+ts,mode,site,ttfb_ms,dom_ms,load_ms,status
+2025-11-26T06:47:05.379Z,dot,https://httpbin.org,1613,2622,2623,ok

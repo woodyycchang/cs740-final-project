@@ -1,0 +1,2 @@
+ts,mode,site,ttfb_ms,dom_ms,load_ms,status
+2025-11-26T06:43:44.278Z,public_udp,https://httpbin.org,126,1314,1316,ok

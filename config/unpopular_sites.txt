@@ -1,0 +1,10 @@
+https://httpbin.org
+https://ietf.org
+https://nist.gov
+https://mozilla.org
+https://python.org
+https://apache.org
+https://gnu.org
+https://cern.ch
+https://eclipse.org
+https://r-project.org
