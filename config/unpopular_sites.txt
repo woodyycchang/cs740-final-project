@@ -1,10 +1,10 @@
-https://httpbin.org
+https://postman-echo.com
 https://ietf.org
 https://nist.gov
 https://mozilla.org
 https://python.org
 https://apache.org
-https://gnu.org
+https://reqres.in
 https://cern.ch
 https://eclipse.org
 https://r-project.org
