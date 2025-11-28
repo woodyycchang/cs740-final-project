@@ -6,22 +6,23 @@ if [[ -z "${RESOLVER_IP:-}" ]]; then
   echo "Set RESOLVER_IP to the resolver VM IP" >&2; exit 1
 fi
 
-modes=$(yq '.modes[]' config/modes.yml)
+modes=$(yq -r '.modes[]' config/modes.yml)
 mapfile -t sites < <(shuf config/sites.txt)
 
 for mode in $modes; do
   ./scripts/10_dns_profiles.sh "$mode"
   for site in "${sites[@]}"; do
+    echo "DEBUG: mode=$mode, site=$site, resolver=$RESOLVER_IP"
     # COLD
-    ssh "$RESOLVER_IP" 'sudo unbound-control flush_zone . || sudo systemctl restart unbound' || true
+    ssh "Ryan7777@$RESOLVER_IP" 'sudo unbound-control flush_zone . || sudo systemctl restart unbound' || true
     sudo resolvectl flush-caches || true
-    ./scripts/20_measure_dns.sh "$site" "$RESOLVER_IP" "$mode" data/raw/dns.csv 5
+    ./scripts/20_measure_dns.sh "$site" "$RESOLVER_IP" "$mode" data/raw/local_cache_dns_cold.csv 5
     tmpdir=$(mktemp -d)
-    node scripts/30_measure_pageload.js "$site" "$mode" data/raw/web.csv "$tmpdir"
+    node scripts/30_measure_pageload.js "$site" "$mode" data/raw/local_cache_web_cold.csv "$tmpdir"
     rm -rf "$tmpdir"
     # WARM
     node scripts/30_measure_pageload.js "$site" "$mode" /dev/null "$HOME/.warm-$mode-$site" || true
-    ./scripts/20_measure_dns.sh "$site" "$RESOLVER_IP" "$mode" data/raw/dns.csv 5
-    node scripts/30_measure_pageload.js "$site" "$mode" data/raw/web.csv "$HOME/.warm-$mode-$site" || true
+    ./scripts/20_measure_dns.sh "$site" "$RESOLVER_IP" "$mode" data/raw/local_cache_dns_warm.csv 5
+    node scripts/30_measure_pageload.js "$site" "$mode" data/raw/local_cache_web_warm.csv "$HOME/.warm-$mode-$site" || true
   done
 done

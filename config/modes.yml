@@ -1,7 +1,7 @@
 modes:
-  - public_udp
-  - dot
-  - doh
+  # - public_udp
+  # - dot
+  # - doh
   - local_cache
 
 # For scripts, set RESOLVER_IP env var on client node, example:
