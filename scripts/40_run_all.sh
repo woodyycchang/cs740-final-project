@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-OUT_DIR="use_this_data/raw"
+OUT_DIR="data_ryan/raw"
 mkdir -p "$OUT_DIR"
 
 if [[ -z "${RESOLVER_IP:-}" ]]; then
@@ -18,7 +18,7 @@ fi
 modes=$(yq -r '.modes[]' config/modes.yml)
 
 # Sites list
-mapfile -t sites < config/sites.txt
+mapfile -t sites < config/unpopular_sites.txt
 
 for mode in $modes; do
   ./scripts/10_dns_profiles.sh "$mode"

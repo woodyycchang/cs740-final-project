@@ -1,6 +1,6 @@
 modes:
-    #- public_udp
-    - dot
+    - public_udp
+    # - dot
     #- doh
     #- local_cache
 
