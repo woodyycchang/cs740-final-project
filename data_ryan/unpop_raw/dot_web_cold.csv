@@ -1,0 +1,11 @@
+ts,mode,site,ttfb_ms,dom_ms,load_ms,status
+2025-12-03T20:30:22.628Z,dot,https://postman-echo.com,395,1818,2276,ok
+2025-12-03T20:30:36.039Z,dot,https://ietf.org,183,643,934,ok
+2025-12-03T20:30:46.071Z,dot,https://nist.gov,98,885,1359,ok
+2025-12-03T20:30:56.741Z,dot,https://mozilla.org,476,1161,1462,ok
+2025-12-03T20:31:06.363Z,dot,https://python.org,73,580,653,ok
+2025-12-03T20:31:15.530Z,dot,https://apache.org,41,460,622,ok
+2025-12-03T20:31:25.229Z,dot,https://reqres.in,223,1365,1927,ok
+2025-12-03T20:31:42.957Z,dot,https://cern.ch,1625,5273,6639,ok
+2025-12-03T20:32:04.906Z,dot,https://eclipse.org,155,839,1042,ok
+2025-12-03T20:32:14.678Z,dot,https://r-project.org,798,1296,1339,ok

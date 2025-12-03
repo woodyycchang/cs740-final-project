@@ -1,0 +1,11 @@
+ts,mode,site,ttfb_ms,dom_ms,load_ms,status
+2025-12-03T20:05:14.885Z,doh,example.com,212,257,258,ok
+2025-12-03T20:05:27.188Z,doh,wikipedia.org,193,2101,2111,ok
+2025-12-03T20:05:41.512Z,doh,cloudflare.com,393,1733,2654,ok
+2025-12-03T20:05:51.173Z,doh,apple.com,125,1032,1181,ok
+2025-12-03T20:06:22.153Z,doh,nytimes.com,403,2525,9081,ok
+2025-12-03T20:06:34.358Z,doh,github.com,102,1420,1817,ok
+2025-12-03T20:06:40.933Z,doh,cnn.com,72,117,117,ok
+2025-12-03T20:06:48.471Z,doh,medium.com,98,340,402,ok
+2025-12-03T20:06:55.365Z,doh,reddit.com,113,231,232,ok
+2025-12-03T20:07:07.081Z,doh,stackoverflow.com,372,1328,1895,ok

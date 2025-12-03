@@ -31,7 +31,10 @@ if (!fs.existsSync(out)) fs.appendFileSync(out, "ts,mode,site,ttfb_ms,dom_ms,loa
       args: [
         '--no-sandbox',
         '--disable-dev-shm-usage',
-        `--user-data-dir=${tmp}` // reuse tmp to simulate warm cache by reusing the same dir
+        '--disable-features=AsyncDns',
+        '--disable-features=DnsOverHttps',
+        '--disable-quic',
+        `--user-data-dir=${tmp}`
       ],
     };
     if (exe) launch.executablePath = exe;

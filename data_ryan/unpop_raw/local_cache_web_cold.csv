@@ -1,0 +1,11 @@
+ts,mode,site,ttfb_ms,dom_ms,load_ms,status
+2025-12-03T21:10:44.656Z,local_cache,https://postman-echo.com,318,1724,2174,ok
+2025-12-03T21:10:57.391Z,local_cache,https://ietf.org,201,650,920,ok
+2025-12-03T21:11:05.991Z,local_cache,https://nist.gov,88,854,1222,ok
+2025-12-03T21:11:16.232Z,local_cache,https://mozilla.org,560,1234,1539,ok
+2025-12-03T21:11:25.367Z,local_cache,https://python.org,68,566,635,ok
+2025-12-03T21:11:33.357Z,local_cache,https://apache.org,40,544,572,ok
+2025-12-03T21:11:42.943Z,local_cache,https://reqres.in,123,1319,1880,ok
+2025-12-03T21:12:00.453Z,local_cache,https://cern.ch,1370,5145,6698,ok
+2025-12-03T21:12:20.853Z,local_cache,https://eclipse.org,182,884,1116,ok
+2025-12-03T21:12:30.743Z,local_cache,https://r-project.org,1106,1832,1834,ok
